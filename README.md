@@ -10,3 +10,5 @@ Produk /produk List produk yang bisa dibeli.Detail Produk /produk/[id] Rincian 1
 Keranjang /keranjang Review produk yang ingin dibeli.Checkout /checkout Isi alamat, metode bayar.
 Pesanan Saya /pesanan Riwayat order user.Detail Pesanan /pesanan/[id] Status & info detail satu pesanan.
 Profile /profile Info dan edit data user.
+
+npm install swiper dulu kalo mau munculin effect caruselnya tapi error juga sih
