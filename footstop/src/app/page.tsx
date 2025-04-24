@@ -50,20 +50,20 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6 text-center">NEW ARRIVALS</h2>
         <div className="grid md:grid-cols-4 gap-6">
           {[
-            { name: "Converse 1970 - Black", price: "Rp 1.700.000", image: "converse.png" },
+            { name: "Converse 1970 - Black", price: "Rp 1.700.000", image: "converse70.png" },
             { name: "Nike BWSR90 - Grey", price: "Rp 610.000", image: "nike-grey.png" },
             { name: "Adidas OZW - White", price: "Rp 1.350.000", image: "adidas-white.png" },
             { name: "Original Tape - Black", price: "Rp 1.090.000", image: "original-black.png" }
           ].map((item, idx) => (
             <div key={idx} className="border p-4 rounded-xl bg-gray-50">
-              <Image src={`/images/products/${item.image}`} alt={item.name} width={300} height={200} className="mb-4" />
+              <Image src={`/images/${item.image}`} alt={item.name} width={300} height={300} className="mb-4 center" />
               <div className="font-semibold">{item.name}</div>
               <div className="text-sm text-gray-600">{item.price}</div>
             </div>
           ))}
         </div>
         <div className="text-center mt-6">
-          <button className="border px-6 py-2 rounded">View All</button>
+          <a href="" className="border px-6 py-2 rounded">View All</a>
         </div>
       </section>
 
@@ -129,6 +129,11 @@ export default function Home() {
           <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
             <p className="text-sm mb-2">"Karyawanya Ganteng Bangeeeeetttt"</p>
             <strong>Aisyah</strong><br/>
+            <span className="text-xs text-gray-500">⭐ 5.0</span>
+          </SwiperSlide>
+          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
+            <p className="text-sm mb-2">"Mantap!"</p>
+            <strong>Alif</strong><br/>
             <span className="text-xs text-gray-500">⭐ 5.0</span>
           </SwiperSlide>
           {/* …slide lainnya */}
