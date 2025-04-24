@@ -1,4 +1,6 @@
 // components/Navbar.jsx
+//npm install lucide-react
+import Link from 'next/link';
 import React from "react";
 
 export default function Navbar() {
@@ -16,13 +18,9 @@ export default function Navbar() {
           <input type="text" placeholder="Search..." className="text-black border px-3 py-1 rounded-md" />
           <div className="flex items-center gap-4">
 
-  <a href="" className="bg-black text-white px-4 py-1.5 rounded-md hover:opacity-90 transition">
-    Login
-  </a>
+          <a href="/login" className="bg-black text-white px-6 py-2 rounded hover:bg-red-800 transition">Log-in</a>
 
-  <a href="" className="bg-gray-200 text-black px-4 py-1.5 rounded-md hover:bg-gray-300 transition">
-    Register
-  </a>
+          <a href="/register" className="bg-gray-400 text-black px-6 py-2 rounded hover:bg-black hover:text-white transition">Register</a>
 </div>
 
         </div>
