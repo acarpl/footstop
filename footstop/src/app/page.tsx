@@ -117,6 +117,11 @@ export default function Home() {
             <span className="text-xs text-gray-500">⭐ 5.0</span>
           </SwiperSlide>
           <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
+            <p className="text-sm mb-2">"UDah lah kiatmat aja apa kek tiba tiba gozila keluar"</p>
+            <strong>Baskaara</strong><br/>
+            <span className="text-xs text-gray-500">⭐ 5.0</span>
+          </SwiperSlide>
+          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
             <p className="text-sm mb-2">"Luar Biasa Fast Respond"</p>
             <strong>Aghea Simarmata</strong><br/>
             <span className="text-xs text-gray-500">⭐ 5.0</span>
