@@ -39,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* Brand Strip */}
-      <div className="flex justify-center gap-10 py-6 bg-black border-t border-b">
+      <div className="flex justify-center gap-10 py-6 bg-black border-t border-b overflow-x-auto px-4">
         {["nike", "jordan", "adidas", "crocs", "puma", "converse", "onitsuka"]?.map((brand, index) => (
           <Image key={index} src={`/images/${brand}.png`} alt={brand} width={70} height={50} />
         ))}
@@ -48,7 +48,7 @@ export default function Home() {
       {/* New Arrivals */}
       <section className="py-12 px-6">
         <h2 className="text-2xl font-bold mb-6 text-center">NEW ARRIVALS</h2>
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { name: "Converse 1970 - Black", price: "Rp 1.700.000", image: "converse70.png" },
             { name: "Nike BWSR90 - Grey", price: "Rp 610.000", image: "nike-grey.png" },
@@ -70,7 +70,7 @@ export default function Home() {
       {/* Browse By Style */}
       <section className="py-12 px-6 bg-gray-100">
         <h2 className="text-2xl font-bold mb-6 text-center">BROWSE BY dress STYLE</h2>
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { name: "Casual", image: "casual.png" },
             { name: "Formal", image: "formal.png" },
@@ -101,47 +101,13 @@ export default function Home() {
           }}
           className="max-w-6xl mx-auto"
         >
-          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
-            <p className="text-sm mb-2">"Kualitasnya luar biasa! Nyaman dan stylish!"</p>
-            <strong>Aghea Simarmata</strong><br/>
-            <span className="text-xs text-gray-500">⭐ 5.0</span>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
-            <p className="text-sm mb-2">"Mantap Bagus Bangeeeeetttt!"</p>
-            <strong>Budi Setiono</strong><br/>
-            <span className="text-xs text-gray-500">⭐ 5.0</span>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
-            <p className="text-sm mb-2">"Mantap!"</p>
-            <strong>Alif</strong><br/>
-            <span className="text-xs text-gray-500">⭐ 5.0</span>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
-            <p className="text-sm mb-2">"UDah lah kiatmat aja apa kek tiba tiba gozila keluar"</p>
-            <strong>Baskaara</strong><br/>
-            <span className="text-xs text-gray-500">⭐ 5.0</span>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
-            <p className="text-sm mb-2">"Luar Biasa Fast Respond"</p>
-            <strong>Aghea Simarmata</strong><br/>
-            <span className="text-xs text-gray-500">⭐ 5.0</span>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
-            <p className="text-sm mb-2">"Banyak Banget pilihanya sesuai expetasi!"</p>
-            <strong>Zarput</strong><br/>
-            <span className="text-xs text-gray-500">⭐ 5.0</span>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
-            <p className="text-sm mb-2">"Karyawanya Ganteng Bangeeeeetttt"</p>
-            <strong>Aisyah</strong><br/>
-            <span className="text-xs text-gray-500">⭐ 5.0</span>
-          </SwiperSlide>
-          <SwiperSlide className="p-4 bg-gray-50 rounded shadow">
-            <p className="text-sm mb-2">"Mantap!"</p>
-            <strong>Alif</strong><br/>
-            <span className="text-xs text-gray-500">⭐ 5.0</span>
-          </SwiperSlide>
-          {/* …slide lainnya */}
+          {["Aghea Simarmata", "Budi Setiono", "Alif", "Baskaara", "Zarput", "Aisyah"].map((name, i) => (
+            <SwiperSlide key={i} className="p-4 bg-gray-50 rounded shadow">
+              <p className="text-sm mb-2">"Review dari {name}!"</p>
+              <strong>{name}</strong><br/>
+              <span className="text-xs text-gray-500">⭐ 5.0</span>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </section>
 
