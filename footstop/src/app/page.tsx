@@ -21,7 +21,7 @@ export default function Home() {
           <p className="mb-4">Explore a wide range of exclusively crafted sneakers tailored to your personality.</p>
           <a href="" className="bg-black text-white px-6 py-2 rounded">Shop Now</a>
           <div className="flex mt-6 gap-6 text-gray-600 text-sm">
-            <div><strong>50+</strong><br/>BRANDS</div>
+            <div><strong>7</strong><br/>BRANDS</div>
             <div><strong>1,000+</strong><br/>PRODUCTS</div>
             <div><strong>10,000+</strong><br/>CUSTOMERS</div>
           </div>
@@ -41,7 +41,7 @@ export default function Home() {
       {/* Brand Strip */}
       <div className="flex justify-center gap-10 py-6 bg-black border-t border-b">
         {["nike", "jordan", "adidas", "crocs", "puma", "converse", "onitsuka"]?.map((brand, index) => (
-          <Image key={index} src={`/images/${brand}.png`} alt={brand} width={100} height={10} />
+          <Image key={index} src={`/images/${brand}.png`} alt={brand} width={70} height={50} />
         ))}
       </div>
 
