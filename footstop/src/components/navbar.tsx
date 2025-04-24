@@ -16,13 +16,13 @@ export default function Navbar() {
           <input type="text" placeholder="Search..." className="text-black border px-3 py-1 rounded-md" />
           <div className="flex items-center gap-4">
 
-  <button className="bg-black text-white px-4 py-1.5 rounded-md hover:opacity-90 transition">
+  <a href="" className="bg-black text-white px-4 py-1.5 rounded-md hover:opacity-90 transition">
     Login
-  </button>
+  </a>
 
-  <button className="bg-gray-200 text-black px-4 py-1.5 rounded-md hover:bg-gray-300 transition">
+  <a href="" className="bg-gray-200 text-black px-4 py-1.5 rounded-md hover:bg-gray-300 transition">
     Register
-  </button>
+  </a>
 </div>
 
         </div>

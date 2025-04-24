@@ -19,7 +19,7 @@ export default function Home() {
         <div>
         <h1 className="text-3xl md:text-5xl font-bold mb-4">FIND SHOES THAT MATCHES YOUR STYLE</h1>
           <p className="mb-4">Explore a wide range of exclusively crafted sneakers tailored to your personality.</p>
-          <button className="bg-black text-white px-6 py-2 rounded">Shop Now</button>
+          <a href="" className="bg-black text-white px-6 py-2 rounded">Shop Now</a>
           <div className="flex mt-6 gap-6 text-gray-600 text-sm">
             <div><strong>50+</strong><br/>BRANDS</div>
             <div><strong>1,000+</strong><br/>PRODUCTS</div>
@@ -39,9 +39,9 @@ export default function Home() {
       </section>
 
       {/* Brand Strip */}
-      <div className="flex justify-center gap-8 py-6 bg-black border-t border-b">
-        {["nike", "jordan", "crocs", "puma", "nb", "original"]?.map((brand, index) => (
-          <Image key={index} src={`/images/brands/${brand}.png`} alt={brand} width={50} height={30} />
+      <div className="flex justify-center gap-10 py-6 bg-black border-t border-b">
+        {["nike", "jordan", "adidas", "crocs", "puma", "converse", "onitsuka"]?.map((brand, index) => (
+          <Image key={index} src={`/images/${brand}.png`} alt={brand} width={100} height={10} />
         ))}
       </div>
 
