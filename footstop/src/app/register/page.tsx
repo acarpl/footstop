@@ -1,4 +1,3 @@
-//login page
 'use client';
 
 import { Home } from 'lucide-react';
@@ -6,19 +5,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function LoginPage() {
+<<<<<<< HEAD
+  return (
+    <main className="min-h-screen flex items-center justify-center relative">
+=======
     return (
       <main className="min-h-screen flex items-center justify-center relative">
+>>>>>>> 37d8e645 (sebelum pulang ya guys ya)
       {/* Background Blur */}
       <div
         className="absolute inset-0 bg-cover bg-center filter blur-sm z-0"
-        style={{ backgroundImage: `url('/images/bg-shoes.jpg')` }}
+        style={{ backgroundImage: "url('/images/bg-shoes.jpg')" }}
       />
+<<<<<<< HEAD
+
+=======
+>>>>>>> 37d8e645 (sebelum pulang ya guys ya)
       <Link href="/" className="absolute top-4 right-4 z-10">
-          <Home className="w-8 h-8 text-white hover:text-blue-400 transition" />
+        <Home className="w-8 h-8 text-white hover:text-blue-400 transition" />
       </Link>
+
       {/* Login Box */}
       <div className="relative z-10 bg-white rounded-lg shadow-xl flex w-[90%] md:w-[800px] overflow-hidden">
-        
         {/* Left - Form */}
         <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
           <h2 className="text-5xl font-bold text-black text-center mb-6">FOOTSTOP</h2>
@@ -42,7 +50,7 @@ export default function LoginPage() {
             </a>
           </p>
         </div>
-    
+
         {/* Right - Image */}
         <div className="w-1/2 hidden md:block">
           <Image
@@ -54,6 +62,6 @@ export default function LoginPage() {
           />
         </div>
       </div>
-    </main>    
-    );
-  }
+    </main>
+  );
+}
