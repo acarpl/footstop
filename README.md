@@ -1,14 +1,80 @@
-VIEW UNTUK ADMIN
-Halaman Route FungsinyaDashboard Admin /admin/dashboard Statistik pesanan, jumlah user, produk dll.
-Manajemen Produk /admin/produk Lihat, tambah, edit, hapus produk.Manajemen Pesanan /admin/pesanan Lihat status pesanan dari user.
-Detail Pesanan /admin/pesanan/[id] Rincian satu pesanan lengkap.Manajemen User /admin/user (Optional) Lihat semua user terdaftar.
-Login Admin /admin/login Halaman masuk admin.
-🧑‍💻 VIEW UNTUK USER / PELANGGAN
-Halaman Route FungsinyaLanding Page / Halaman utama produk (bisa tampilkan best item).
-Register /register Daftar user baru.Login /login Masuk akun user.
-Produk /produk List produk yang bisa dibeli.Detail Produk /produk/[id] Rincian 1 produk.
-Keranjang /keranjang Review produk yang ingin dibeli.Checkout /checkout Isi alamat, metode bayar.
-Pesanan Saya /pesanan Riwayat order user.Detail Pesanan /pesanan/[id] Status & info detail satu pesanan.
-Profile /profile Info dan edit data user.
+# 👟 Footstop
 
-npm install swiper dulu kalo mau munculin effect caruselnya tapi error juga sih
+**Footstop** is a modern, online-first sneaker and footwear store offering original branded shoes at promo prices with limited stock. We're building the most reliable and stylish platform for sneakerheads and casual wear lovers alike.
+
+---
+
+## 🌟 Features
+
+- 🛍️ Browse curated collections of Nike, Adidas, Puma, and more.
+- 🔥 Limited stock drops with real-time availability.
+- 🧾 Simple and intuitive checkout system.
+- 🎨 Clean and minimal UI (TailwindCSS powered).
+- 🖥️ Admin dashboard for managing stock and sales.
+- 💳 Secure payment integration via Midtrans.
+
+---
+
+## 🏁 Getting Started
+
+### 🔧 Installation
+
+1. Clone this repo:
+
+```bash
+git clone https://github.com/username/footstop.git
+cd footstop
+
+npm install
+# or
+yarn install
+
+NEXT_PUBLIC_MIDTRANS_CLIENT_KEY=your_midtrans_client_key
+MIDTRANS_SERVER_KEY=your_midtrans_server_key
+
+npm run dev
+
+🗂️ Tech Stack
+Next.js – Frontend Framework
+
+TailwindCSS – UI Styling
+
+Midtrans – Payment Gateway
+
+Prisma + PostgreSQL – Database ORM
+
+Vercel – Deployment
+
+
+/components
+  /ProductCard
+  /Navbar
+/pages
+  /api
+  /admin
+  /checkout
+/public/images/brands
+/prisma
+/styles
+
+🚀 Roadmap
+ ✅Product catalog & brand listing
+
+ Admin panel
+
+ Wishlist & user accounts
+
+ Shipping integration
+
+ Mobile App (React Native)
+
+❤️ Credits
+Made with ❤️ by Rasya Falqi Gani & Tamam Alifian — Founder of Footstop
+Follow us on GitHub | LinkedIn
+
+
+
+
+
+
+
