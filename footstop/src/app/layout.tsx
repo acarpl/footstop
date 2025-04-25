@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 // app/layout.js
 import './globals.css'
 
+<<<<<<< HEAD
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -29,3 +30,14 @@ export default function RootLayout({ children }) {
   )
 }
 
+=======
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
+
+
+>>>>>>> 06aae841 (Dashboar Bor Botol kontol)

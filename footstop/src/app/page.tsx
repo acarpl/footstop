@@ -1,5 +1,9 @@
 'use client';
 
+<<<<<<< HEAD
+=======
+import Footer from "@/components/footer";
+>>>>>>> 06aae841 (Dashboar Bor Botol kontol)
 import Navbar from "../components/navbar"; // atau "@/components/Navbar" kalau kamu pakai alias
 import Head from "next/head";
 import Image from "next/image";
@@ -11,9 +15,15 @@ import "swiper/css/pagination";
 export default function Home() {
   return (
     <>
+<<<<<<< HEAD
     <Navbar />
       <main className="bg-white text-gray-800 font-sans">
         
+=======
+    
+      <main className="bg-white text-gray-800 font-sans">
+      <Navbar />
+>>>>>>> 06aae841 (Dashboar Bor Botol kontol)
       {/* Hero Section */}
       <section className="grid md:grid-cols-2 items-center px-6 pt-6 pb-0 bg-gray-50">
         <div>
@@ -63,7 +73,11 @@ export default function Home() {
           ))}
         </div>
         <div className="text-center mt-6">
+<<<<<<< HEAD
           <a href="" className="border px-6 py-2 rounded">View All</a>
+=======
+          <a href="/dashboard" className="border px-6 py-2 rounded">View All</a>
+>>>>>>> 06aae841 (Dashboar Bor Botol kontol)
         </div>
       </section>
 
@@ -112,12 +126,17 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
+<<<<<<< HEAD
       <section className="bg-black text-white py-12 px-6 text-center">
+=======
+      <section className="bg-black text-white py-12 px-6 text-center rounded">
+>>>>>>> 06aae841 (Dashboar Bor Botol kontol)
         <h2 className="text-2xl font-bold mb-4">STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
         <div className="flex flex-col md:flex-row justify-center gap-4 max-w-xl mx-auto">
           <input type="email" placeholder="Enter your email address" className="text-black bg-white p-2 rounded w-full" />
           <button className="bg-red-600 px-6 py-2 rounded">Subscribe</button>
         </div>
+<<<<<<< HEAD
       </section>
 
       {/* Footer */}
@@ -156,6 +175,12 @@ export default function Home() {
         </div>
         <div className="text-center text-xs text-gray-400 mt-8">&copy; 2025 Foot.Stop. All rights reserved.</div>
       </footer>
+=======
+      {/*Footer*/}
+      <Footer />
+      </section>
+      
+>>>>>>> 06aae841 (Dashboar Bor Botol kontol)
     </main>
     </>
   );

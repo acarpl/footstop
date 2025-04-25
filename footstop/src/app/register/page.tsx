@@ -8,11 +8,20 @@ import Link from 'next/link';
 export default function LoginPage() {
     return (
       <main className="min-h-screen flex items-center justify-center relative">
+<<<<<<< HEAD
       {/* Background Blur */}
       <div
         className="absolute inset-0 bg-cover bg-center filter blur-sm z-0"
         style={{ backgroundImage: `url('/images/bg-shoes.jpg')` }}
       />
+=======
+{/* Background Blur */}
+<div
+  className="absolute inset-0 bg-cover bg-center filter blur-sm z-0"
+  style={{ backgroundImage: "url('/images/bg-shoes.jpg')" }}
+/>
+
+>>>>>>> 06aae841 (Dashboar Bor Botol kontol)
       <Link href="/" className="absolute top-4 right-4 z-10">
           <Home className="w-8 h-8 text-white hover:text-blue-400 transition" />
       </Link>
