@@ -5,22 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function LoginPage() {
-<<<<<<< HEAD
   return (
     <main className="min-h-screen flex items-center justify-center relative">
-=======
-    return (
-      <main className="min-h-screen flex items-center justify-center relative">
->>>>>>> 37d8e645 (sebelum pulang ya guys ya)
       {/* Background Blur */}
       <div
         className="absolute inset-0 bg-cover bg-center filter blur-sm z-0"
         style={{ backgroundImage: "url('/images/bg-shoes.jpg')" }}
       />
-<<<<<<< HEAD
-
-=======
->>>>>>> 37d8e645 (sebelum pulang ya guys ya)
       <Link href="/" className="absolute top-4 right-4 z-10">
         <Home className="w-8 h-8 text-white hover:text-blue-400 transition" />
       </Link>
@@ -41,7 +32,7 @@ export default function LoginPage() {
             className="border text-black bg-gray-300 rounded-md p-2 mb-4 w-full"
           />
           <button className="bg-black text-white py-2 rounded-md w-full cursor-not-allowed">
-            Login
+            Daftar
           </button>
           <p className="text-black text-sm text-center mt-4">
             Udah punya akun?{' '}

@@ -9,7 +9,9 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow px-4 py-3">
       <div className="flex items-center justify-between">
-        <div className="text-xl px-5 font-bold text-black">Foot.Stop</div>
+      <Link href="/" className="text-xl px-5 font-bold text-black">
+  Foot.Stop
+</Link>
 
         {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">
