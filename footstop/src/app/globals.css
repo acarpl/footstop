@@ -1,29 +1,80 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-light: hsl(0, 0%, 100%);
+  --foreground-light: #171717;
+  --background-dark: #ededed;
+  --foreground-dark: #292929;
+
+  --background: var(--background-light);
+  --foreground: var(--foreground-light);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Toggle otomatis dark mode jika user mengaktifkannya */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--background-dark);
+    --foreground: var(--foreground-dark);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Gunakan ini untuk custom font jika ada */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans, sans-serif);
+  --font-mono: var(--font-geist-mono, monospace);
 }
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animasi untuk "muncul V" */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-from-left {
+  animation: slideInFromLeft 0.6s ease-out;
+}
+
+.animate-fade-right {
+  animation: fadeRight 0.6s ease-out;
+}
+
+/* Alat Config element
 .swiper {
   border: 2px dashed red;
 }
+* {
+  outline: 1px solid rgba(0, 255, 0, 0.3);
+}
+*/

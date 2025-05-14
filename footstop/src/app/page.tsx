@@ -1,12 +1,13 @@
 'use client';
-
+import AnimatedSection from "@/components/Main/AnimatedSection";
 import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import NewArrivals from "@/components/NewArrivals";
+//npm install framer-motion
 
 const BRANDS = ["nike", "jordan", "adidas", "crocs", "puma", "converse", "onitsuka"];
 
@@ -18,25 +19,29 @@ const NEW_ARRIVALS = [
 ];
 
 const STYLES = [
-  { name: "Casual", image: "casual.png" },
-  { name: "Formal", image: "formal.png" },
-  { name: "Party", image: "party.png" },
-  { name: "Gym", image: "gym.png" }
+  { name: "Casual", image: "converse70.png" },
+  { name: "Formal", image: "vans-black.png" },
+  { name: "Party", image: "nikejordan - limited1.jpeg" },
+  { name: "Gym", image: "adidas-white.png" }
 ];
 
 const TESTIMONIALS = ["Aghea Simarmata", "Budi Setiono", "Alif", "Baskaara", "Zarput", "Aisyah"];
 
 export default function Home() {
+
+
   return (
     <>
-      <Navbar />
+
       <main className="bg-white text-gray-800 font-sans">
+
         {/* Hero Section */}
-        <section className="grid md:grid-cols-2 items-center px-6 pt-6 pb-0 bg-gray-50">
-          <div>
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">FIND SHOES THAT MATCHES YOUR STYLE</h1>
+      <AnimatedSection>
+        <section className="grid md:grid-cols-2 items-center px-0 pt-0 pb-0 bg-gray-50">
+          <div className="px-8">
+            <h1 className="animate-fade-right text-3xl md:text-5xl font-bold mb-4">FIND SHOES THAT MATCHES YOUR STYLE</h1>
             <p className="mb-4">Explore a wide range of exclusively crafted sneakers tailored to your personality.</p>
-            <a href="" className="bg-black text-white px-6 py-2 rounded">Shop Now</a>
+            <a href="/shop" className="bg-black text-white px-6 py-2 rounded">Shop Now</a>
             <div className="flex mt-6 gap-6 text-gray-600 text-sm">
               <div><strong>7</strong><br />BRANDS</div>
               <div><strong>1,000+</strong><br />PRODUCTS</div>
@@ -47,6 +52,7 @@ export default function Home() {
             <Image src="/images/shoe-hero.png" alt="Shoe Hero" fill className="object-bottom object-cover" />
           </div>
         </section>
+    </AnimatedSection>
 
         {/* Brand Strip */}
         <div className="flex justify-center gap-10 py-6 bg-black border-t border-b overflow-x-auto px-4">
@@ -56,29 +62,14 @@ export default function Home() {
         </div>
 
         {/* New Arrivals */}
-        <section className="py-12 px-6">
-          <h2 className="text-2xl font-bold mb-6 text-center">NEW ARRIVALS</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {NEW_ARRIVALS.map((item, idx) => (
-              <div key={idx} className="border p-4 rounded-xl bg-gray-50">
-                <Image src={`/images/${item.image}`} alt={item.name} width={300} height={300} className="mb-4 center" />
-                <div className="font-semibold">{item.name}</div>
-                <div className="text-sm text-gray-600">{item.price}</div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-6">
-            <a href="/dashboard" className="border px-6 py-2 rounded">View All</a>
-          </div>
-        </section>
-
+          <NewArrivals />
         {/* Browse By Style */}
         <section className="py-12 px-6 bg-gray-100">
           <h2 className="text-2xl font-bold mb-6 text-center">BROWSE BY DRESS STYLE</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {STYLES.map((style, idx) => (
               <div key={idx} className="text-center">
-                <Image src={`/images/styles/${style.image}`} alt={style.name} width={200} height={200} className="rounded-xl mb-2" />
+                <Image src={`/images/${style.image}`} alt={style.name} width={200} height={200} className="rounded-xl mb-2" />
                 <div className="font-semibold">{style.name}</div>
               </div>
             ))}

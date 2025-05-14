@@ -68,8 +68,8 @@ Vercel – Deployment
 
  Mobile App (React Native)
 
-❤️ Credits
-Made with ❤️ by Rasya Falqi Gani & Tamam Alifian — Founder of Footstop
+Credits
+Made with PRIDE by Rasya Falqi Gani & Tamam Alifian — Founder of Footstop
 Follow us on GitHub | LinkedIn
 
 
